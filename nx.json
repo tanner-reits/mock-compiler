@@ -28,5 +28,6 @@
     "appsDir": "packages",
     "libsDir": "packages"
   },
-  "defaultProject": "cli-ts"
+  "defaultProject": "cli-ts",
+  "plugins": ["@nxrs/cargo"]
 }

@@ -18,6 +18,7 @@
     "@nrwl/node": "^14.4.3",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "14.4.3",
+    "@nxrs/cargo": "^0.3.3",
     "@types/inquirer": "^8.2.1",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",

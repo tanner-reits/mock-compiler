@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "cli-ts": "packages/cli-ts"
+    "cli-ts": "packages/cli-ts",
+    "cli_rust": "packages/cli-rust"
   }
 }
