@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build:cli": "npx nx build cli"
+    "build:cli-ts": "npx nx build cli-ts --watch",
+    "start:cli-ts": "npm run build:cli-ts && npx nx serve cli-ts"
   },
   "bin": {
-    "cli": "./dist/packages/cli/src/main.js"
+    "cli-ts": "./dist/packages/cli-ts/main.js"
   },
   "private": true,
   "devDependencies": {
@@ -34,9 +35,10 @@
     "typescript": "~4.7.2"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.0.0",
     "commander": "^9.4.0",
-    "inquirer": "^9.0.2",
+    "inquirer": "^8.0.0",
+    "rxjs": "^7.5.6",
     "tslib": "^2.3.0"
   }
 }
