@@ -1,17 +1,12 @@
-import { Command } from 'commander';
 import { ListChoiceOptions } from 'inquirer';
 import { generateBuildCommand, generateBuildPrompt } from './build-task';
+import { TaskConfig } from './cli-task.interface';
 
 export enum TASK {
     BUILD = 'build',
 }
 
 export const TASK_KEYS = Object.values(TASK);
-
-export interface TaskConfig {
-    buildCommand: () => Command;
-    buildPrompt: () => Promise<void>;
-}
 
 export const TASK_CONFIGS: { [key in TASK]: TaskConfig } = {
     build: {
